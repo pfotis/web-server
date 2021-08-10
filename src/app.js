@@ -3,24 +3,29 @@ const express = require('express')
 const app = express()
 
 app.get('', (req, res) => {
-    res.send('Hello express!')
+    res.send('<h1>Weather</h1>')
 })
 
 app.get('/help', (req, res) => {
-    res.send('Help page')
+    res.send({
+        name: 'Peter',
+        age: 36
+    })
 })
 
 app.get('/about', (req, res) => {
-    res.send('About app.com')
+    res.send('<h1>About</h1>')
 })
 
 app.get('/weather', (req, res) => {
-    res.send('local weather')
+    res.send([{
+        city: 'Melbourne',
+        temp: 16
+    },{
+        city: 'Sydney',
+        temp: 12
+    }])
 })
-
-// app.com
-// app.com/about
-// app.com/help
 
 app.listen(3000, () => {
     console.log('Server is up on port 3000.')

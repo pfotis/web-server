@@ -18,10 +18,19 @@ app.get('', (req, res) => {
     })
 })
 
-app.get('/about', (req, res)=> {
+app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About',
         name: 'Peter Fotis'
+    })
+})
+
+app.get('/help', (req, res) => {
+    res.render('help', {
+        title: 'Help',
+        message: `Once you have a template, use the Handlebars.compile method to 
+        compile the template into a function. The generated function takes a context 
+        argument, which will be used to render the template.`
     })
 })
 

@@ -1,11 +1,12 @@
 const path = require('path')
 const express = require('express')
+const hbs = require('hbs')
 
 const app = express()
 
 // Define paths for Express condig
 const publicDirectoryPath = path.join(__dirname, '../public')
-const viewsPath = path.join(__dirname, '../tamplates')
+const viewsPath = path.join(__dirname, '../templates/views')
 
 
 // Setup handlebars engine and views location

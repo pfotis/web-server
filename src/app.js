@@ -11,10 +11,12 @@ const viewsPath = path.join(__dirname, '../tamplates')
 // Setup handlebars engine and views location
 app.set('view engine','hbs')
 app.set('views', viewsPath)
-app.use(express.static(publicDirectoryPath))
 
 
 // Setup static deirectory to serve
+app.use(express.static(publicDirectoryPath))
+
+
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather App',

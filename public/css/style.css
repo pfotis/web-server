@@ -8,7 +8,11 @@ header {
     padding-left: 10%;
 }
 
-a {
+h1 {
+    font-size: 53px;
+}
+
+header a {
     text-decoration:none;
     color: darkblue;
     margin-right: 15px;
@@ -21,6 +25,10 @@ a:hover {
 body {
     padding: 10% 0 0 10%;
     background-color: lightgray;
+}
+
+main {
+    margin-top: 40px;
 }
 
 img {

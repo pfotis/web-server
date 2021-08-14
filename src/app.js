@@ -17,7 +17,6 @@ hbs.registerPartials(partialsPath)
 // Setup static deirectory to serve
 app.use(express.static(publicDirectoryPath))
 
-
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather App',
@@ -43,10 +42,29 @@ app.get('/help', (req, res) => {
 })
 
 app.get('/weather', (req, res) => {
+    if (!req.query.address) {
+        return res.send({
+            error: 'You must provide an address!'
+        })
+    }
+    console.log(req.query.address)
     res.send({
-        city: 'Melbourne',
-        temp: 16,
-        name: 'Peter Fotis'
+        forecast: 'It is snowing',
+        location: 'Melbourne',
+        address: req.query.address
+    })
+})
+
+app.get('/products', (req, res) => {
+    if (!req.query.search) {
+        return res.send({
+            error: 'You must provide a search term'
+        })
+    }
+
+    console.log(req.query.search)
+    res.send({
+        products: []
     })
 })
 

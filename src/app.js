@@ -51,11 +51,19 @@ app.get('/weather', (req, res) => {
 })
 
 app.get('/help/*', (req, res) => {
-    res.send('Help article not found')
+    res.render('help', {
+        title: 'help',
+        message: 'Help article not found',
+        name: 'Peter Fotis'
+    })
 })
 
 app.get('*', (req, res) => {
-    res.send('404 page')
+    res.render('404', {
+        title: '404 page',
+        textMsg: 'Page not found',
+        name: 'Peter Fotis'
+    })
 })
 
 app.listen(3000, () => {

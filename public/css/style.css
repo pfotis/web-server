@@ -1,4 +1,4 @@
-header{
+header {
     background-color: darkgray;
     position:fixed; 
     top: 0px;
@@ -6,6 +6,16 @@ header{
     left: 0px;
     color: darkblue;
     padding-left: 10%;
+}
+
+a {
+    text-decoration:none;
+    color: darkblue;
+    margin-right: 15px;
+}
+
+a:hover {
+    color: darkred;
 }
 
 body {

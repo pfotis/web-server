@@ -1,5 +1,18 @@
+header{
+    background-color: lightpink;
+    position:fixed; 
+    top: 0px;
+    right: 0px;
+    left: 0px;
+}
+
 h1 {
     color: grey;
+}
+
+body {
+    padding-top: 10%;
+    background-color: lightblue;
 }
 
 img {
@@ -7,6 +20,8 @@ img {
 }
 
 footer {
+    background-color: lightgreen;
+    height: 40px;
     position:fixed; 
     bottom:0px; 
     left:0px; 

@@ -5,3 +5,10 @@ h1 {
 img {
     width: 250px;
 }
+
+footer {
+    position:fixed; 
+    bottom:0px; 
+    left:0px; 
+    right:0px;
+}

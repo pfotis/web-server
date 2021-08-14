@@ -43,13 +43,11 @@ app.get('/help', (req, res) => {
 })
 
 app.get('/weather', (req, res) => {
-    res.send([{
+    res.send({
         city: 'Melbourne',
-        temp: 16
-    },{
-        city: 'Sydney',
-        temp: 12
-    }])
+        temp: 16,
+        name: 'Peter Fotis'
+    })
 })
 
 app.listen(3000, () => {

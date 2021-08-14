@@ -1,18 +1,16 @@
 header{
-    background-color: lightpink;
+    background-color: darkgray;
     position:fixed; 
     top: 0px;
     right: 0px;
     left: 0px;
-}
-
-h1 {
-    color: grey;
+    color: darkblue;
+    padding-left: 10%;
 }
 
 body {
-    padding-top: 10%;
-    background-color: lightblue;
+    padding: 10% 0 0 10%;
+    background-color: lightgray;
 }
 
 img {
@@ -20,8 +18,8 @@ img {
 }
 
 footer {
-    background-color: lightgreen;
-    height: 40px;
+    background-color: darkgrey;
+    padding: 10px 0 0 10%;
     position:fixed; 
     bottom:0px; 
     left:0px; 

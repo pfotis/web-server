@@ -10,7 +10,8 @@ const forecast = (latitude, longitube, callback) => {
             callback('Unable to find location. Try another seaarch', undefined)
         } else {
             const { current } = body
-            callback(undefined, `${current.weather_descriptions[0]}. It is currently ${current.temperature} degress out. It feels like ${current.feelslike} degress out. The humidity is ${current.humidity}%.`
+            callback(undefined, current
+                // `${current.weather_descriptions[0]}. It is currently ${current.temperature} degress out. It feels like ${current.feelslike} degress out. The humidity is ${current.humidity}%.`
             )
         }
     })
